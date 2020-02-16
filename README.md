@@ -116,3 +116,10 @@ In main.cpp call the following functions:
 	
 #### Step 4
 The output files are as follow:
+
+	"ShearLoadingVsNormalLoading.txt" // Shear Stress (Loading) vs. Normal Stress 
+	"VelocityVsTimeStar.txt" // Slip Velocity vs. time* 
+	"TotalShearVsNormalLoading.txt" // Shear Stress vs. Normal Stress
+	"SlipVsTimeStar.txt" // Slip vs. Time*
+	"ShearVsTimeStar.txt" // Shear Stress vs. Time*
+
