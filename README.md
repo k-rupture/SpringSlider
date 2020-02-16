@@ -17,7 +17,7 @@ In friction.cpp go to the following function
 #### Step 2
 In this function, set the parameters as you wish. These parameters have been already set for reproducing the results shown in our manuscript.
 
-  	// Rate-and-state friction law
+  	// Rate-and-State Friction Law
 	fnot = 0.6 ; // Friction coefficient
 	a = 0.015 ; // Direct effect parameter
 	b = 0.020 ; // State evolution parameter
@@ -25,7 +25,7 @@ In this function, set the parameters as you wish. These parameters have been alr
 	etha = 4.41*pow(10.,6.); // Radation damping // MPa/(m/s)
   	dc = 14.0*10.*pow(10.,-6.); // State evolution distance // m
 	
-	// Hydrualic fracturing
+	// Hydrualic Fracturing and Fault Information
 	double pi = M_PI ; // Pi number
 	alfa = 35.0*pi/180.0 ; // Fault orientation (\alpha) // degree
 	pressure = 30.0*pow(10.0,6.0); // Fluid pressure inside the crack (p)  // Pa 
@@ -41,7 +41,7 @@ In this function, set the parameters as you wish. These parameters have been alr
 	H = 1.3 ; // Distance of fault center from Hydraulic fracturing path // m
 	L_star = t_not_star = X_not/H ;
 
-	// time integration
+	// Time Integration
 	final_time = 2.0*X_not/U ; // s
 	step_time = pow(10.0, -5.0) ; // s (this is the initial time step; since we are using adaptive time stepping.)
 	dt_max = 0.01*X_not/U; // s
@@ -71,7 +71,7 @@ In this function, set the parameters as you wish. These parameters have been alr
 	Vnot = pow(10.0 , -6.0); // Initial slip velocity
 	etha = 4.41*pow(10.,6.); // Radiation damping // MPa/(m/s)
 
-	//  Hydrualic fracturing
+	// Hydrualic Fracturing and Fault Information
 	double pi = M_PI ; // Pi number
 	alfa = 35.0*pi/180.0 ; // Fault orientation // degree
 	pressure = 30.0*pow(10.0,6.0); // Pressue inside the crack (p) // Pa 
@@ -88,7 +88,7 @@ In this function, set the parameters as you wish. These parameters have been alr
 	H = 1.3 ; // Fault distance from Hydraulic Fracture // m
 	L_star = t_not_star = X_not/H ;
 	
-	// Time integration
+	// Time Integration
 	final_time = 2.0*X_not/U ; // Time // s
 	step_time = 100 ; // Starting point // s
 	dt_max = 0.01*X_not/U; // s
