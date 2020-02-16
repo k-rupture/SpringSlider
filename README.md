@@ -54,6 +54,18 @@ In main.cpp call the following functions:
 	   Friction C ;
 	   C.setDataForRSF() ;
 	   C.SpringSliderRSF() ;
+	   
+#### Step 4
+The output files are as follow:
+
+"SlipVelocityVsTime.txt" // Slip Velocity vs. Time
+"SlipVsTime.txt" // Slip vs. Time
+"StateVsTime.txt" // State vs. Time
+"ShearLoadingVsNormalLoading.txt" // Shear Stress (Loading) vs. Normal Stress 
+"VelocityVsTimeStar.txt" // Slip Velocity vs. Time* 
+"TotalShearVsNormalLoading.txt" // Total Shear Stress vs. Normal Stress
+"SlipVsTimeStar.txt" // Slip vs. Time*
+"ShearVsTimeStar.txt" // Shear Stress vs. Time*
 
 ### Example 2
 Coulomb Failure Criterion (CFC)
@@ -102,3 +114,5 @@ In main.cpp call the following functions:
 	C.setDataForCFC() ;
 	C.SpringSliderCFC() ;
 	
+#### Step 4
+The output files are as follow:
