@@ -17,13 +17,13 @@ In friction.cpp go to the following function
 #### Step 3
 In this function, set the parameters as you wish. These parameters have been already set for reproducing the results shown in our manuscript.
 
-  // Rate-and-state friction law
+  	// Rate-and-state friction law
 	fnot = 0.6 ; // Friction coefficient
 	a = 0.015 ; // direct effect parameter
 	b = 0.020 ; // state evolution parameter
 	Vnot = pow(10.0 , -6.0); // m/s
 	etha = 4.41*pow(10.,6.); // radation damping // MPa/(m/s)
-  dc = 14.0*10.*pow(10.,-6.); // state evolution distance // m
+  	dc = 14.0*10.*pow(10.,-6.); // state evolution distance // m
 	
 	// Hydrualic fracturing
 	double pi = M_PI ; // Pi number
