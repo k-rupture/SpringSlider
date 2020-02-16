@@ -71,7 +71,7 @@ In this function, set the parameters as you wish. These parameters have been alr
 	Vnot = pow(10.0 , -6.0); // Initial slip velocity
 	etha = 4.41*pow(10.,6.); // Radiation damping // MPa/(m/s)
 
-	// H.F. information
+	//  Hydrualic fracturing
 	double pi = M_PI ; // Pi number
 	alfa = 35.0*pi/180.0 ; // Fault orientation // degree
 	pressure = 30.0*pow(10.0,6.0); // Pressue inside the crack (p) // Pa 
