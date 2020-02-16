@@ -19,11 +19,11 @@ In this function, set the parameters as you wish. These parameters have been alr
 
   	// Rate-and-state friction law
 	fnot = 0.6 ; // Friction coefficient
-	a = 0.015 ; // direct effect parameter
-	b = 0.020 ; // state evolution parameter
-	Vnot = pow(10.0 , -6.0); // m/s
-	etha = 4.41*pow(10.,6.); // radation damping // MPa/(m/s)
-  	dc = 14.0*10.*pow(10.,-6.); // state evolution distance // m
+	a = 0.015 ; // Direct effect parameter
+	b = 0.020 ; // State evolution parameter
+	Vnot = pow(10.0 , -6.0); // Initial slip velocity m/s
+	etha = 4.41*pow(10.,6.); // Radation damping // MPa/(m/s)
+  	dc = 14.0*10.*pow(10.,-6.); // State evolution distance // m
 	
 	// Hydrualic fracturing
 	double pi = M_PI ; // Pi number
@@ -36,9 +36,9 @@ In this function, set the parameters as you wish. These parameters have been alr
 	X_not = 13.5*pow(10.0 , 4.0) ; // Initial distance of hydraulic fracture from fault // m 
 
 	double poisson_ratio = 0.25 ; // Poisson ratio
-	double L_fault = 1.0 ; // Fault Lenght // m 
+	double L_fault = 1.0 ; // Fault lenght // m 
 	K = mu/((1.0-poisson_ratio)*L_fault) ; // Fault stifness ;
-	H = 1.3 ; // distance of fault center from Hydraulic fracturing path // m
+	H = 1.3 ; // Distance of fault center from Hydraulic fracturing path // m
 	L_star = t_not_star = X_not/H ;
 
 	// time integration
@@ -81,16 +81,16 @@ In this function, set the parameters as you wish. These parameters have been alr
 	mu = 30.0*pow(10, 9.0); // Shear modules // Pa
 	X_not = 13.5*pow(10.0 , 4.0); // Initial distance // m
 	
-	double L_fault = 0.4 ; // Fault Length // m
+	double L_fault = 0.4 ; // Fault length // m
 	double poisson_ratio = 0.25 ;
 	double mu_star = mu/(1.0 - poisson_ratio);
-	K = mu/((1.0-poisson_ratio)*L_fault) ; // Fault Stiffness
+	K = mu/((1.0-poisson_ratio)*L_fault) ; // Fault stiffness
 	H = 1.3 ; // Fault distance from Hydraulic Fracture // m
 	L_star = t_not_star = X_not/H ;
 	
 	// Time integration
-	final_time = 2.0*X_not/U ; // time // s
-	step_time = 100 ; // Starting Point // s
+	final_time = 2.0*X_not/U ; // Time // s
+	step_time = 100 ; // Starting point // s
 	dt_max = 0.01*X_not/U; // s
 	current_time = 0.00 ; // s
 	tolerance = pow(10.0 , -6.0) ; // Tolerance ;
